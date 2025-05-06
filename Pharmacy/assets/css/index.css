@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #2770d6, #131069);
+ 
+
+}
+
+.container-index{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lightbox-cover {
+
+    width: 450px;
+    height: 370px;
+    background-color: white;
+    border: none;
+
+    box-shadow: 0px 0px 20px #5e5b5b;
+
+
+
+}
+
+.form-container {
+    margin: 30px;
+    border: none;
+    
+}
+
+#form-login {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.form-logo {
+
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: "Merriweather", serif;
+}
+
+.form-logo img{
+    width: 40px;
+}
+
+#h1 {
+    font-size: 25px;
+    font-family: "Merriweather", serif;
+}
+
+#pharmacy {
+    color: #131069;
+
+
+}
+
+#cy {
+    color: red;
+}
+
+#unifacisa {
+    color: #131069;
+
+}
+
+#uni {
+    color: #2770d6;
+}
+
+
+
+
+/* Inputs */
+
+
+.er-container {
+
+    height: 40px;
+    border-bottom: 1px solid #747171;
+
+
+}
+
+#erInput {
+    background-color: transparent;
+    border: 0;
+    margin: 10px;
+    width: calc(100% - 20px);
+    font-size: 17px;
+    font-family: "Merriweather", serif;
+
+}
+
+#erInput:focus {
+    outline: none;
+}
+
+.password-container {
+    border-bottom: 1px solid #747171;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* Password input */
+#password {
+
+    background-color: transparent;
+    border: 0;
+    margin: 10px;
+    width: calc(100% - 20px);
+    font-size: 17px;
+    font-family: "Merriweather", serif;
+}
+
+#password:focus {
+    outline: none;
+}
+
+#loginBtn {
+
+    background-color: #2770d6;
+    color: white;
+    border-radius: 3px;
+    border: 0;
+    width: 108px;
+    height: 32px;
+    align-self: flex-end;
+    font-size: 13px;
+    margin-top: 20px;
+    font-family: "Merriweather", serif;
+
+}
+
+#loginBtn:hover {
+    cursor: pointer;
+}
+
+
+/* SHOW PASSWORD BUTTONN */
+.container-eye {
+    --color: #a5a5b0;
+    --size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+
+    margin-right: 17px;
+
+
+}
+
+.container-eye .eye {
+
+    animation: keyframes-fill .5s;
+}
+
+.container-eye .eye-slash {
+
+    animation: keyframes-fill .5s;
+    display: none;
+}
+
+/* ------ On check event ------ */
+.container-eye input:checked~.eye {
+    display: none;
+}
+
+.container-eye input:checked~.eye-slash {
+    display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.container-eye input {
+
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}

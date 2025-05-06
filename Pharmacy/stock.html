@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Gustavo - Stock</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/stock.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container container-stock">
+
+        <div class="allContent">
+
+            <header class="header-stock">
+                <h1 id="stock-title"> Stock Management</h1>
+            </header>
+
+            <main class="main-container">
+
+               
+
+                <div class="adder">
+
+                    <div class="adder-container">
+
+
+                        <div class="input-container">
+                            <div class="input">
+
+                                <label>Name:</label>
+                                <input type="text" id="productName" class="input-field">
+
+                            </div>
+
+
+                            <div class="input">
+
+                                <label>Price:</label>
+                                <input type="number" id="productPrice" class="input-field">
+
+                            </div>
+
+                            <div class="input">
+
+                                <label>Quantity:</label>
+                                <input type="number" id="productQuantity" class="input-field">
+
+                            </div>
+
+                           
+
+                            <div class="input">
+
+                                <label>User:</label>
+                                <input type="text" id="productAdder" class="input-field">
+
+                            </div>
+
+                        </div>
+
+                        <div class="button-container">
+                            <button onclick="product.add();" id="btnAdd" class="btn">Add</button>
+                            <button onclick="product.reset();" class="btn">Reset</button>
+                        </div>
+
+                    </div>
+
+                    <div class="div-table">
+
+                        <table>
+
+                            <thead>
+
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Creation Date</th>
+                                <th>User</th>
+                                <th id="thAction">Actions</th>
+                            </thead>
+
+                            <!-- Será adicionado automaticamente no JS -->
+                            <tbody id="tbody">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+
+
+            </main>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
